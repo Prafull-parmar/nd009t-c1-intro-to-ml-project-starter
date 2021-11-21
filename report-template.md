@@ -19,13 +19,13 @@ So we added in these as new features in our train and test dataset. We also noti
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 
-After adding **additional features** the score was **0.47351** which was much better as compared to the **Initial Kaggle score** of the model, which was **1.39467**.
+After adding **additional features** the score was **0.47008** which was much better as compared to the **Initial Kaggle score** of the model, which was **1.38879**.
 Adding additional features like **year, month, day, hour** columns and changing the data type of the **season** and **weather** columns to **category**, helped the model to better predict the bike demand.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
 
-Post trying out different hyperparameter options available, I noticed that the score improved from **0.47351** to **0.46730**. Couple of hyperparameters that I tuned, included the training time limit, number of bag folds , number of stack levels.
+Post trying out different hyperparameter options available, I noticed that the score improved from **0.47008** to **0.46601**. Couple of hyperparameters that I tuned, included the training time limit, number of bag folds , number of stack levels.
 Though, I could only improve the score slightly, as I believe this was due to the fact that the complete dataset is considered during the evaluation because of the increased number of folds and not just a isolated one part of the test dataset. 
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
@@ -36,9 +36,9 @@ Further more would increase the train time limit, so that AutoGluon has more tim
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|time_limit|num_bags_folds|num_stack_levels|score|
 |--|--|--|--|--|
-|initial|600|0|0|1.39467|
-|add_features|600|0|0|0.47351|
-|hpo|700|5|3|0.46730|
+|initial|600|0|0|1.38879|
+|add_features|600|0|0|0.47008|
+|hpo|700|5|3|0.46601|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -52,7 +52,7 @@ Further more would increase the train time limit, so that AutoGluon has more tim
 
 In this project we worked on the **"Bike Sharing Demand"** dataset's Kaggle competition. 
 Problem statement involved accurately predicting the bike demands. 
-We realized that this was a Regression problem and leveraged AutoGluon to create and train an initial model and achieved a Kaggle score of 1.39467 .
+We realized that this was a Regression problem and leveraged AutoGluon to create and train an initial model and achieved a Kaggle score of 1.38879 .
 We performed some **exploratory data analysis (EDA)** and using concepts of feature engineering, we added in some new feature columns for year, month, day and hour. 
-We also modified data types of categorical columns like season and weather. Post the feature engineering step, we trained our model again and we were able to achieve a Kaggle score of **0.47351**. We also worked on fine tuning some hyperparameters and were able to increase the score further to **0.46730**.
+We also modified data types of categorical columns like season and weather. Post the feature engineering step, we trained our model again and we were able to achieve a Kaggle score of **0.47008**. We also worked on fine tuning some hyperparameters and were able to increase the score further to **0.46601**.
 Thus, we were able to successfully apply concepts of EDA and hyperparameter tuning to our model to help improve its overall performance.   
